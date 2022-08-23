@@ -50,7 +50,7 @@ const login = async (req,res)=>{
             const token = user.generateJWT()
             console.log(token)
         }else{
-            res.send("Invalid  or password")
+            res.send("Invalid email or password")
         }
     }else{
         res.send("Invalid email or password")
